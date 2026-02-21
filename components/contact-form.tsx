@@ -25,7 +25,7 @@ export default function ContactForm() {
     setLoading(true)
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/Leads@grandeur-spaces.com", {
+      const response = await fetch("https://formsubmit.co/ajax/ahany9710@gmail.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -36,7 +36,7 @@ export default function ContactForm() {
           phone: formData.phone,
           email: formData.email || "لم يتم تحديده",
           "نوع الوحدة": formData.unitType || "لم يتم تحديده",
-          _cc: "apkzoz85@gmail.com",
+          _cc: "Sherifshenawy20@gmail.com",
           _subject: "استفسار جديد - Hady Tatweer Misr",
           _captcha: "false",
           _template: "table",
