@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   authors: [{ name: "تطوير مصر للتطوير العقاري" }],
   creator: "Tatweer Misr",
   publisher: "Tatweer Misr",
-  metadataBase: new URL("https://tatweermisr-hossam.vercel.app"),
+  metadataBase: new URL(""),
   alternates: {
     canonical: "/",
     languages: {
