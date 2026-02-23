@@ -36,7 +36,7 @@ export default function ContactForm() {
           phone: formData.phone,
           email: formData.email || "لم يتم تحديده",
           "نوع الوحدة": formData.unitType || "لم يتم تحديده",
-          _cc: "Sherifshenawy20@gmail.com",
+          _cc: "Sherifshenawy20@gmail.com,a.abdelraheem6696@gmail.com",
           _subject: "استفسار جديد - Hady Tatweer Misr",
           _captcha: "false",
           _template: "table",
