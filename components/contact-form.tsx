@@ -1,12 +1,10 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Loader2, CheckCircle2 } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
@@ -25,7 +23,7 @@ export default function ContactForm() {
     setLoading(true)
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/ahany9710@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/Leads@grandeur-spaces.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -36,10 +34,10 @@ export default function ContactForm() {
           phone: formData.phone,
           email: formData.email || "لم يتم تحديده",
           "نوع الوحدة": formData.unitType || "لم يتم تحديده",
-          _cc: "Sherifshenawy20@gmail.com,a.abdelraheem6696@gmail.com",
-          _subject: "استفسار جديد - Hady Tatweer Misr",
+          _subject: "استفسار جديد - Tatweer Misr",
           _captcha: "false",
           _template: "table",
+          _sender: "Tatweer Misr",
         }),
       })
 
@@ -78,7 +76,6 @@ export default function ContactForm() {
             required
             className="text-right h-11 text-sm transition-all duration-300"
           />
-
           <Input
             id="phone"
             type="tel"
@@ -86,20 +83,18 @@ export default function ContactForm() {
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
             required
-            className="text-right h-11 text-sm direction-ltr transition-all duration-300"
+            className="text-right h-11 text-sm transition-all duration-300"
             dir="ltr"
           />
-
           <Input
             id="email"
             type="email"
             placeholder="البريد الإلكتروني (example@email.com)"
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="text-right h-11 text-sm direction-ltr transition-all duration-300"
+            className="text-right h-11 text-sm transition-all duration-300"
             dir="ltr"
           />
-
           <Select
             value={formData.unitType}
             onValueChange={(value) => setFormData({ ...formData, unitType: value })}
@@ -118,7 +113,6 @@ export default function ContactForm() {
               <SelectItem value="commercial">وحدة تجارية</SelectItem>
             </SelectContent>
           </Select>
-
           <Button
             type="submit"
             className="w-full bg-primary hover:bg-primary/90 text-white font-semibold text-base h-12 transition-all duration-300 hover:shadow-xl"
