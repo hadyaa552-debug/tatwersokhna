@@ -65,6 +65,25 @@ export default function ProjectDBay() {
           ))}
         </div>
 
+        {/* Gallery */}
+        <div className="mb-10">
+          <h3 className="text-2xl font-bold text-foreground mb-6 text-center">معرض الصور</h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            {[
+              "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80",
+              "https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=800&q=80",
+              "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+              "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80",
+              "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
+              "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+            ].map((src, i) => (
+              <div key={i} className="relative aspect-[4/3] overflow-hidden">
+                <img src={src} alt={`D Bay ${i + 1}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="bg-primary p-8 lg:p-10 text-center text-white">
           <h3 className="text-2xl font-bold mb-2">احجز وحدتك في D Bay</h3>
           <p className="text-white/80 mb-6">تواصل معنا للحصول على العروض الحصرية والأسعار</p>

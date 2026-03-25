@@ -4,7 +4,6 @@ import BloomfieldsOverview from "@/components/bloomfields-overview"
 import BloomfieldsLocation from "@/components/bloomfields-location"
 import BloomfieldsUnits from "@/components/bloomfields-units"
 import BloomfieldsAmenities from "@/components/bloomfields-amenities"
-import BloomfieldsPayment from "@/components/bloomfields-payment"
 import BloomfieldsGallery from "@/components/bloomfields-gallery"
 import ProjectFoukaBay from "@/components/project-fouka-bay"
 import ProjectDBay from "@/components/project-d-bay"
@@ -27,7 +26,7 @@ export default function Home() {
       <BloomfieldsUnits />
       <BloomfieldsAmenities />
       <BloomfieldsGallery />
-      <BloomfieldsPayment />
+
 
       {/* Additional Projects */}
       <ProjectFoukaBay />

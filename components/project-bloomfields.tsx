@@ -65,6 +65,25 @@ export default function ProjectBloomfields() {
           ))}
         </div>
 
+        {/* Gallery */}
+        <div className="mb-10">
+          <h3 className="text-2xl font-bold text-foreground mb-6 text-center">معرض الصور</h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            {[
+              "/projects/bloomfields.webp",
+              "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80",
+              "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80",
+              "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80",
+              "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+              "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+            ].map((src, i) => (
+              <div key={i} className="relative aspect-[4/3] overflow-hidden">
+                <img src={src} alt={`Bloomfields ${i + 1}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="bg-primary p-8 lg:p-10 text-center text-white">
           <h3 className="text-2xl font-bold mb-2">احجز وحدتك في Bloomfields</h3>
           <p className="text-white/80 mb-6">تواصل معنا للحصول على العروض الحصرية والأسعار</p>

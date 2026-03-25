@@ -34,11 +34,7 @@ export default function ContactForm() {
           phone: formData.phone,
           email: formData.email || "لم يتم تحديده",
           "نوع الوحدة": formData.unitType || "لم يتم تحديده",
-<<<<<<< HEAD
           _subject: "استفسار جديد - تطوير مصر – مشاريع متعددة",
-=======
-          _subject: "استفسار جديد - Tatweer Misr",
->>>>>>> f514f370e4460e8bfb65754c0920059928bc7a55
           _captcha: "false",
           _template: "table",
           _sender: "Tatweer Misr",
