@@ -34,11 +34,7 @@ export default function ContactForm() {
           phone: formData.phone,
           email: formData.email || "لم يتم تحديده",
           "نوع الوحدة": formData.unitType || "لم يتم تحديده",
-<<<<<<< HEAD
           _subject: "استفسار جديد - تطوير مصر – مشاريع متعددة",
-=======
-          _subject: "استفسار جديد - Tatweer Misr",
->>>>>>> f514f370e4460e8bfb65754c0920059928bc7a55
           _captcha: "false",
           _template: "table",
           _sender: "Tatweer Misr",
@@ -72,38 +68,16 @@ export default function ContactForm() {
       </CardHeader>
       <CardContent className="my-0">
         <form onSubmit={handleSubmit} className="space-y-5">
-          <Input
-            id="name"
-            placeholder="الاسم الكامل *"
-            value={formData.name}
+          <Input id="name" placeholder="الاسم الكامل *" value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            required
-            className="text-right h-11 text-sm transition-all duration-300"
-          />
-          <Input
-            id="phone"
-            type="tel"
-            placeholder="رقم الهاتف * (+20 123 456 7890)"
-            value={formData.phone}
-            onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-            required
-            className="text-right h-11 text-sm transition-all duration-300"
-            dir="ltr"
-          />
-          <Input
-            id="email"
-            type="email"
-            placeholder="البريد الإلكتروني (example@email.com)"
-            value={formData.email}
-            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="text-right h-11 text-sm transition-all duration-300"
-            dir="ltr"
-          />
-          <Select
-            value={formData.unitType}
-            onValueChange={(value) => setFormData({ ...formData, unitType: value })}
-            required
-          >
+            required className="text-right h-11 text-sm transition-all duration-300" />
+          <Input id="phone" type="tel" placeholder="رقم الهاتف * (+20 123 456 7890)"
+            value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+            required className="text-right h-11 text-sm transition-all duration-300" dir="ltr" />
+          <Input id="email" type="email" placeholder="البريد الإلكتروني (example@email.com)"
+            value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+            className="text-right h-11 text-sm transition-all duration-300" dir="ltr" />
+          <Select value={formData.unitType} onValueChange={(value) => setFormData({ ...formData, unitType: value })} required>
             <SelectTrigger className="text-right h-11 text-sm w-full transition-all duration-300">
               <SelectValue placeholder="نوع الوحدة *" />
             </SelectTrigger>
@@ -117,12 +91,9 @@ export default function ContactForm() {
               <SelectItem value="commercial">وحدة تجارية</SelectItem>
             </SelectContent>
           </Select>
-          <Button
-            type="submit"
+          <Button type="submit"
             className="w-full bg-primary hover:bg-primary/90 text-white font-semibold text-base h-12 transition-all duration-300 hover:shadow-xl"
-            size="lg"
-            disabled={loading}
-          >
+            size="lg" disabled={loading}>
             {loading ? "جاري الإرسال..." : "إرسال الطلب"}
           </Button>
         </form>
