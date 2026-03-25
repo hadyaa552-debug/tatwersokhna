@@ -15,14 +15,12 @@ export default function ProjectBloomfields() {
           <p className="text-xl text-muted-foreground">بلوم فيلدز – قلب مدينة المستقبل</p>
         </div>
 
-        <div className="relative aspect-[16/7] overflow-hidden shadow-2xl mb-12 bg-muted/20 flex items-center justify-center">
-          <div className="text-center text-muted-foreground">
-            <p className="text-6xl mb-4">🏙️</p>
-            <p className="text-lg font-medium">Bloomfields – تطوير مصر</p>
-          </div>
-          <div className="absolute bottom-8 right-8 text-right text-foreground">
+        <div className="relative aspect-[16/7] overflow-hidden shadow-2xl mb-6">
+          <img src="https://prod-images.nawy.com/processed/compound_image/image/9334/default.webp" alt="Bloomfields" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+          <div className="absolute bottom-8 right-8 text-right text-white">
             <p className="text-3xl font-bold">Bloomfields</p>
-            <p className="text-muted-foreground">مدينة المستقبل – القاهرة الجديدة</p>
+            <p className="text-white/80">مدينة المستقبل – القاهرة الجديدة</p>
           </div>
         </div>
 
@@ -70,12 +68,12 @@ export default function ProjectBloomfields() {
           <h3 className="text-2xl font-bold text-foreground mb-6 text-center">معرض الصور</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {[
-              "/projects/bloomfields.webp",
-              "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80",
-              "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80",
-              "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80",
-              "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
-              "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+              "https://prod-images.nawy.com/processed/compound_image/image/9333/default.webp",
+              "https://prod-images.nawy.com/processed/compound_image/image/9332/default.webp",
+              "https://prod-images.nawy.com/processed/compound_image/image/9327/default.webp",
+              "https://prod-images.nawy.com/processed/compound_image/image/9328/default.webp",
+              "https://prod-images.nawy.com/processed/compound_image/image/9329/default.webp",
+              "https://prod-images.nawy.com/processed/compound_image/image/9319/default.webp",
             ].map((src, i) => (
               <div key={i} className="relative aspect-[4/3] overflow-hidden">
                 <img src={src} alt={`Bloomfields ${i + 1}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />

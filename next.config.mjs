@@ -2,16 +2,9 @@
 const nextConfig = {
   images: {
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'tatwermisr.org',
-      },
+      { protocol: 'https', hostname: 'prod-images.nawy.com' },
+      { protocol: 'https', hostname: 'tatwermisr.org' },
     ],
   },
 }
-
 export default nextConfig

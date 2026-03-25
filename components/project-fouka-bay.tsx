@@ -15,14 +15,12 @@ export default function ProjectFoukaBay() {
           <p className="text-xl text-muted-foreground">فوكا باي – الكيلو 211 طريق إسكندرية مطروح</p>
         </div>
 
-        <div className="relative aspect-[16/7] overflow-hidden shadow-2xl mb-12 bg-muted/20 flex items-center justify-center">
-          <div className="text-center text-muted-foreground">
-            <p className="text-6xl mb-4">🏖️</p>
-            <p className="text-lg font-medium">Fouka Bay – تطوير مصر</p>
-          </div>
-          <div className="absolute bottom-8 right-8 text-right text-foreground">
+        <div className="relative aspect-[16/7] overflow-hidden shadow-2xl mb-6">
+          <img src="https://prod-images.nawy.com/processed/inventory/compounds/84/gallery/Screenshot%202025-12-29%20163239/default.webp" alt="Fouka Bay" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+          <div className="absolute bottom-8 right-8 text-right text-white">
             <p className="text-3xl font-bold">Fouka Bay</p>
-            <p className="text-muted-foreground">رأس الحكمة – الساحل الشمالي</p>
+            <p className="text-white/80">رأس الحكمة – الكيلو 211</p>
           </div>
         </div>
 
@@ -70,12 +68,12 @@ export default function ProjectFoukaBay() {
           <h3 className="text-2xl font-bold text-foreground mb-6 text-center">معرض الصور</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {[
-              "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
-              "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=800&q=80",
-              "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&q=80",
-              "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
-              "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80",
-              "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800&q=80",
+              "https://prod-images.nawy.com/processed/inventory/compounds/84/gallery/Screenshot%202025-12-29%20163416/default.webp",
+              "https://prod-images.nawy.com/processed/inventory/compounds/84/gallery/Screenshot%202025-12-29%20163318/default.webp",
+              "https://prod-images.nawy.com/processed/compound_image/image/8847/default.webp",
+              "https://prod-images.nawy.com/processed/inventory/compounds/84/gallery/Screenshot%202025-12-29%20163301/default.webp",
+              "https://prod-images.nawy.com/processed/inventory/compounds/84/gallery/Screenshot%202025-12-29%20163358/default.webp",
+              "https://prod-images.nawy.com/processed/compound_image/image/8838/default.webp",
             ].map((src, i) => (
               <div key={i} className="relative aspect-[4/3] overflow-hidden">
                 <img src={src} alt={`Fouka Bay ${i + 1}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
