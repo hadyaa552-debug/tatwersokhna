@@ -2,26 +2,10 @@ import { Building2, Users, Award, MapPin } from "lucide-react"
 
 export default function AboutDeveloper() {
   const stats = [
-    {
-      icon: Building2,
-      number: "7",
-      label: "مشاريع متكاملة",
-    },
-    {
-      icon: MapPin,
-      number: "4",
-      label: "مواقع استراتيجية",
-    },
-    {
-      icon: Users,
-      number: "+25,000",
-      label: "عميل",
-    },
-    {
-      icon: Award,
-      number: "2014",
-      label: "سنة التأسيس",
-    },
+    { icon: Building2, number: "7+", label: "مشاريع متكاملة" },
+    { icon: MapPin, number: "4", label: "مواقع استراتيجية" },
+    { icon: Users, number: "+25,000", label: "عميل" },
+    { icon: Award, number: "2014", label: "سنة التأسيس" },
   ]
 
   return (
@@ -31,14 +15,12 @@ export default function AboutDeveloper() {
           <div className="text-center mb-16 lg:mb-20">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">من نحن</h2>
             <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              منذ تأسيسها عام 2014، كانت تطوير مصر محفزاً حيوياً للتغيير، حيث تقدم قيمة لا مثيل لها من خلال مشاريع مثالية
-              تتقن جميع جوانب التطوير
+              منذ تأسيسها عام 2014، كانت تطوير مصر محفزاً حيوياً للتغيير، حيث تقدم قيمة لا مثيل لها من خلال مشاريع مثالية تتقن جميع جوانب التطوير — من العين السخنة إلى الساحل الشمالي ومدينة المستقبل.
             </p>
           </div>
-
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center space-y-4">
+            {stats.map((stat, i) => (
+              <div key={i} className="text-center space-y-4">
                 <div className="inline-flex items-center justify-center w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-primary/10">
                   <stat.icon className="w-8 h-8 lg:w-10 lg:h-10 text-primary" />
                 </div>
